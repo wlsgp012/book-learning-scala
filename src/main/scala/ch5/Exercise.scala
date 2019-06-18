@@ -16,7 +16,7 @@ object Exercise extends App {
     util.Random.nextInt
     util.Random.nextInt
   }
-  val randomPick2 = (num: => Int, f: (Int, Int) => Int) => f(num, num)
+  def randomPick2(num: => Int, f: (Int, Int) => Int) = f(num, num)
   val randomMax2 = randomPick2(getSecond(), max)
   val randomMin2 = randomPick2(getSecond(), min)
 
